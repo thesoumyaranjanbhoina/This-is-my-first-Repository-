@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Trending AI Prompts | Modern Glassmorphism Hub</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        insta: {
+                            bg: '#0a0a0f',
+                            card: 'rgba(23, 23, 33, 0.65)',
+                            border: 'rgba(255, 255, 255, 0.08)',
+                            pink: '#e1306c',
+                            purple: '#833ab4',
+                            orange: '#f77737',
+                            yellow: '#fcaf45',
+                            cyan: '#00f2fe',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 3s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { opacity: '0.4', filter: 'blur(20px)' },
+                            '100%': { opacity: '0.8', filter: 'blur(35px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #08070d;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism background blur & borders */
+        .glass-panel {
+            background: rgba(18, 18, 28, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(225, 48, 108, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px -10px rgba(131, 58, 180, 0.3);
+        }
+
+        .glass-input {
+            background: rgba(10, 10, 18, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .glass-input:focus {
+            border-color: #e1306c;
+            box-shadow: 0 0 15px rgba(225, 48, 108, 0.3);
+            outline: none;
+        }
+
+        /* Instagram Gradient Text & Buttons */
+        .insta-gradient-text {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .insta-gradient-bg {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .insta-btn {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcaf45 100%);
+            transition: all 0.3s ease;
+        }
+
+        .insta-btn:hover {
+            opacity: 0.92;
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(225, 48, 108, 0.4);
+        }
+
+        /* Custom Scrollbar for sleek horizontal filters and prompt texts */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 15, 25, 0.5);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(225, 48, 108, 0.6);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Glow lights behind UI */
+        .ambient-glow-1 {
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 45vw;
+            height: 45vw;
+            background: radial-gradient(circle, rgba(131, 58, 180, 0.25) 0%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .ambient-glow-2 {
+            position: fixed;
+            bottom: 10%;
+            right: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(225, 48, 108, 0.2) 0%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .ambient-glow-3 {
+            position: fixed;
+            top: 40%;
+            left: 30%;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.1) 0%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative text-slate-100 flex flex-col justify-between">
+
+    <div class="ambient-glow-1 animate-pulse-slow"></div>
+    <div class="ambient-glow-2 animate-pulse-slow" style="animation-delay: 2s;"></div>
+    <div class="ambient-glow-3"></div>
+
+    <div id="instagram-login-page" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#08070d]/95 backdrop-blur-xl transition-all duration-500">
+        <div class="glass-panel w-full max-w-md rounded-3xl p-8 border border-white/15 shadow-2xl relative flex flex-col items-center text-center animate-float">
+            
+            <!-- Instagram Aesthetic Logo Header -->
+            <div class="w-16 h-16 rounded-2xl insta-gradient-bg flex items-center justify-center text-white text-3xl mb-4 shadow-lg shadow-pink-500/30">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <h2 class="text-2xl font-extrabold tracking-tight mb-1">
+                <span class="insta-gradient-text">Instagram Authentication</span>
+            </h2>
+            <p class="text-xs text-slate-400 mb-6 max-w-xs">
+                Log in with your Instagram handle & password to unlock full access to copyable AI prompts & tools.
+            </p>
+
+            <!-- Login Form -->
+            <form id="insta-login-form" onsubmit="submitInstagramLogin(event)" class="w-full space-y-4">
+                <div class="relative">
+                    <i class="fa-solid fa-at absolute left-4 top-3.5 text-slate-400 text-sm"></i>
+                    <input 
+                        type="text" 
+                        id="insta-username" 
+                        placeholder="Instagram Username or Email" 
+                        required
+                        class="w-full py-3 pl-11 pr-4 rounded-xl glass-input text-sm text-white placeholder-slate-400 focus:border-pink-500 transition-all"
+                    >
+                </div>
+
+                <div class="relative">
+                    <i class="fa-solid fa-lock absolute left-4 top-3.5 text-slate-400 text-sm"></i>
+                    <input 
+                        type="password" 
+                        id="insta-password" 
+                        placeholder="Password" 
+                        required
+                        class="w-full py-3 pl-11 pr-10 rounded-xl glass-input text-sm text-white placeholder-slate-400 focus:border-pink-500 transition-all"
+                    >
+                    <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3.5 top-3.5 text-slate-400 hover:text-white text-xs">
+                        <i class="fa-solid fa-eye" id="toggle-pwd-icon"></i>
+                    </button>
+                </div>
+
+                <button 
+                    type="submit" 
+                    id="login-submit-btn"
+                    class="w-full py-3.5 px-6 rounded-xl insta-btn text-white font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                >
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Log In & Access Prompts</span>
+                </button>
+            </form>
+
+            <!-- Quick Demo Auto-fill Button -->
+            <div class="mt-4 pt-4 border-t border-white/10 w-full flex flex-col gap-2">
+                <button 
+                    type="button" 
+                    onclick="quickDemoLogin()" 
+                    class="w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-medium text-pink-400 border border-pink-500/30 transition-all flex items-center justify-center gap-2"
+                >
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Quick Demo Login (@creator_ai)</span>
+                </button>
+            </div>
+
+            <p class="text-[10px] text-slate-500 mt-5">
+                🔒 Secure Portal Simulation • Modern Glassmorphism UI
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 w-full">
+
+        <header class="text-center mb-10 pt-4 relative">
+            <!-- Top Right User Profile Badge (Visible when logged in) -->
+            <div id="user-profile-bar" class="hidden sm:absolute top-0 right-0 flex items-center gap-3 glass-panel px-4 py-2 rounded-2xl border border-pink-500/20">
+                <div class="w-8 h-8 rounded-full insta-gradient-bg flex items-center justify-center text-white text-xs font-bold">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-white" id="display-username">@user</p>
+                    <span class="text-[10px] text-emerald-400 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Unlocked
+                    </span>
+                </div>
+                <button onclick="logoutInstagram()" class="ml-2 text-slate-400 hover:text-pink-400 p-1 text-xs" title="Log Out">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </div>
+
+            <!-- Top tag badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel mb-4 border border-pink-500/30 text-xs font-semibold tracking-wide text-pink-400 uppercase shadow-lg shadow-pink-500/10 animate-bounce" style="animation-duration: 3s;">
+                <span class="w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+                <span>🔥 Updated Daily with AI Prompts</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-3">
+                <span class="insta-gradient-text drop-shadow-sm">TRENDING AI PROMPTS</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-light">
+                "Direct access to high-converting prompts for Midjourney, Bing Image Creator, DALL-E 3 & ChatGPT"
+            </p>
+
+            <!-- Stats Bar -->
+            <div class="flex items-center justify-center gap-6 sm:gap-10 mt-6 text-xs sm:text-sm text-slate-400">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles text-pink-400"></i>
+                    <span class="font-bold text-white" id="total-prompts-count">0</span> Prompts
+                </div>
+                <div class="h-4 w-[1px] bg-white/10"></div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-fire text-amber-400"></i>
+                    <span class="font-bold text-white">100% Free Copy</span>
+                </div>
+                <div class="h-4 w-[1px] bg-white/10"></div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-cyan-400"></i>
+                    <span class="font-bold text-white">Instant Customizer</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-8 max-w-3xl mx-auto">
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                <div class="relative flex items-center">
+                    <i class="fa-solid fa-magnifying-glass absolute left-5 text-slate-400 text-lg group-focus-within:text-pink-400 transition-colors"></i>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Search Prompts... (e.g. Mafia, Cinematic, Girl, Cyberpunk, 8K)" 
+                        class="w-full py-4 pl-14 pr-12 rounded-2xl glass-input text-white placeholder-slate-400 text-base font-normal transition-all"
+                        autocomplete="off"
+                    >
+                    <button id="clear-search" class="hidden absolute right-4 text-slate-400 hover:text-white p-2 text-sm">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="flex items-center justify-between mb-3 px-1">
+                <h3 class="text-xs uppercase tracking-wider font-bold text-slate-400 flex items-center gap-2">
+                    <i class="fa-solid fa-sliders text-pink-400"></i> Categories
+                </h3>
+                <span class="text-xs text-slate-500" id="showing-count">Showing all prompts</span>
+            </div>
+
+            <!-- Categories Horizontal Scroll -->
+            <div class="flex items-center gap-2.5 overflow-x-auto pb-3 pt-1 no-scrollbar px-1 -mx-1" id="category-container">
+                <!-- Category buttons injected by JS -->
+            </div>
+        </section>
+
+        <main>
+            <!-- Grid Container -->
+            <div id="prompts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Prompt cards will be dynamically rendered here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="hidden text-center py-20 px-4 glass-panel rounded-3xl border border-white/10 my-8">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-400 text-3xl">
+                    <i class="fa-solid fa-ghost"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">No Prompts Found</h3>
+                <p class="text-slate-400 text-sm max-w-md mx-auto mb-6">
+                    We couldn't find any prompts matching your criteria. Try searching for broader terms or select a different category.
+                </p>
+                <button id="reset-filter-btn" class="px-6 py-2.5 rounded-xl insta-gradient-bg text-white font-medium text-sm shadow-lg">
+                    Reset Filters
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <footer class="relative z-10 glass-panel border-t border-white/10 mt-16 py-8 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-white tracking-wide">TRENDING AI PROMPTS</span>
+                <span>• Glassmorphism Edition</span>
+            </div>
+            <p>Designed with <i class="fa-solid fa-heart text-pink-500 mx-1"></i> for AI Artists & Content Creators</p>
+            <div class="flex items-center gap-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Customizer Modal -->
+    <div id="customizer-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300">
+        <div class="glass-panel w-full max-w-xl rounded-3xl p-6 sm:p-8 border border-white/20 shadow-2xl relative transform scale-95 transition-all duration-300" id="modal-card">
+            
+            <!-- Close Button -->
+            <button id="close-modal-btn" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-2xl insta-gradient-bg flex items-center justify-center text-white text-lg font-bold shadow-lg shadow-pink-500/20">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white" id="modal-title">Customize Prompt</h3>
+                    <p class="text-xs text-slate-400">Tweak parameters before copying</p>
+                </div>
+            </div>
+
+            <!-- Quick Adjustments -->
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Subject / Character Name</label>
+                    <input type="text" id="modal-subject" class="w-full py-2.5 px-4 rounded-xl glass-input text-sm text-white focus:border-pink-500">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Aspect Ratio</label>
+                        <select id="modal-ar" class="w-full py-2.5 px-3 rounded-xl glass-input text-sm text-slate-200 focus:border-pink-500 bg-slate-900">
+                            <option value="--ar 9:16">📱 9:16 (Story / Reel)</option>
+                            <option value="--ar 16:9">💻 16:9 (Landscape / YouTube)</option>
+                            <option value="--ar 1:1">📸 1:1 (Square Post)</option>
+                            <option value="--ar 4:5">🎨 4:5 (Instagram Portrait)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Lighting Mood</label>
+                        <select id="modal-lighting" class="w-full py-2.5 px-3 rounded-xl glass-input text-sm text-slate-200 focus:border-pink-500 bg-slate-900">
+                            <option value="Cinematic Volumetric Lighting">🎬 Cinematic Volumetric</option>
+                            <option value="Golden Hour Sunset Sunlight">☀️ Golden Hour Glow</option>
+                            <option value="Moody Neon Night Cyber Glow">🌃 Cyber Neon</option>
+                            <option value="Soft Studio Softbox Lighting">📸 Soft Studio Portrait</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Live Customized Prompt Preview</label>
+                    <div class="relative">
+                        <textarea id="modal-preview" rows="4" readonly class="w-full p-3.5 rounded-xl bg-black/50 border border-white/10 text-xs text-slate-200 font-mono leading-relaxed resize-none select-all focus:outline-none"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Action Buttons -->
+            <div class="flex items-center justify-end gap-3 pt-2 border-t border-white/10">
+                <button id="modal-copy-btn" class="px-6 py-3 rounded-xl insta-gradient-bg text-white font-bold text-sm shadow-lg flex items-center gap-2 hover:opacity-95 transition-all w-full sm:w-auto justify-center">
+                    <i class="fa-regular fa-copy"></i>
+                    <span>Copy Customized Prompt</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 pointer-events-none"></div>
+
+    <script>
+        // Data structure containing curated AI prompts categorized as requested
+        const PROMPTS_DATA = [
+            {
+                id: 'm1',
+                title: 'Mafia Portrait - Sicilian Don',
+                category: 'Mafia',
+                catIcon: '🕴️',
+                target: 'Midjourney v6',
+                likes: '14.2k',
+                prompt: 'Ultra-realistic 8k portrait of an Italian Mafia boss in a dark vintage pinstripe double-breasted suit, sitting in a plush leather armchair in a dimly lit mahogany office. Cigarette smoke gently swirling in atmospheric warm volumetric light. Intense piercing glance, subtle wrinkles, dramatic chiaroscuro lighting, shot on Hasselblad 85mm lens, depth of field --ar 9:16 --style raw --v 6.0',
+                tags: ['Mafia', 'Cinematic', 'Portrait', '8k']
+            },
+            {
+                id: 'm2',
+                title: 'Golden Hour Mob Enforcer',
+                category: 'Mafia',
+                catIcon: '🕴️',
+                target: 'Bing AI / DALL-E 3',
+                likes: '9.8k',
+                prompt: 'Cinematic wide shot of an elegant vintage mafia enforcer leaning on a glossy black 1950s Cadillac convertible during golden hour on a coastal road in Sicily. Sharp tailoring, dark sunglasses reflecting warm sunset rays, grainy film texture, 35mm photograph aesthetic.',
+                tags: ['Mafia', 'Golden Hour', 'Cars', 'Vintage']
+            },
+            {
+                id: 'a1',
+                title: 'Old Money Yacht Lifestyle',
+                category: 'Aesthetic',
+                catIcon: '😎',
+                target: 'Midjourney v6',
+                likes: '18.9k',
+                prompt: 'Quiet luxury old money aesthetic, handsome young man with effortless wavy hairstyle wearing a cream cashmere linen polo sweater, on the deck of a classic wooden yacht off the Amalfi coast. Crystal blue ocean backdrop, warm summer sunlight, muted soft colors, Vogue cover aesthetic, high fashion photography --ar 4:5 --v 6.0',
+                tags: ['Aesthetic', 'Golden Hour', 'Portrait', 'Luxury']
+            },
+            {
+                id: 'a2',
+                title: 'Retro Aesthetic Coffee Shop',
+                category: 'Aesthetic',
+                catIcon: '😎',
+                target: 'Bing AI',
+                likes: '11.4k',
+                prompt: 'Aesthetic 90s film aesthetic portrait of a stylish person wearing an oversized leather jacket and vintage headphones sitting inside a moody dimly lit retro cafe on a rainy afternoon, warm ambient lights, soft film grain, Kodak Portra 400 look.',
+                tags: ['Aesthetic', 'Night', 'Reel Prompt']
+            },
+            {
+                id: 'b1',
+                title: 'Cyberpunk Neon Street Boy',
+                category: 'Boys',
+                catIcon: '👦',
+                target: 'Midjourney v6',
+                likes: '22.1k',
+                prompt: 'Hyper-detailed portrait of a handsome anime-style young man in futuristic neon techwear hoodie, standing in a rainy Tokyo alleyway at night, vibrant blue and magenta neon reflections on wet asphalt, glowing holographic visor, cinematic rain drop detail, octane render --ar 9:16 --v 6.0',
+                tags: ['Boys', 'Night', 'Cinematic', 'Reel Prompt']
+            },
+            {
+                id: 'b2',
+                title: 'Urban Streetwear Portrait',
+                category: 'Boys',
+                catIcon: '👦',
+                target: 'Bing AI',
+                likes: '15.3k',
+                prompt: 'Photorealistic fashion shoot of a young guy in oversized streetwear jacket and silver chain, low angle shot standing against a brutalist concrete wall, natural moody shadows, highly detailed skin texture, 8k photo.',
+                tags: ['Boys', 'Portrait', 'Aesthetic']
+            },
+            {
+                id: 'g1',
+                title: 'Ethereal Sunset Girl',
+                category: 'Girls',
+                catIcon: '👧',
+                target: 'Midjourney v6',
+                likes: '27.4k',
+                prompt: 'Breathtaking portrait of a stunning girl with windswept hair illuminated by golden hour sunlight, field of wild lavender flowers in the background, dreamy lens flare, ultra-soft bokeh, natural glowing skin, shot on Canon EOS R5 85mm f/1.2 lens --ar 9:16 --v 6.0',
+                tags: ['Girls', 'Golden Hour', 'Portrait', 'Aesthetic']
+            },
+            {
+                id: 'g2',
+                title: 'Cyberpunk Neon Empress',
+                category: 'Girls',
+                catIcon: '👧',
+                target: 'DALL-E 3',
+                likes: '19.8k',
+                prompt: 'Cyberpunk portrait of a futuristic girl with sleek silver hair and subtle neon facial glowing implants, standing in a crowded rain-soaked futuristic metropolis, intense pink and teal lighting reflections.',
+                tags: ['Girls', 'Night', 'AI Prompt', 'Reel Prompt']
+            },
+            {
+                id: 'c1',
+                title: 'Moody Noir Detective Alley',
+                category: 'Cinematic',
+                catIcon: '🎬',
+                target: 'Midjourney v6',
+                likes: '16.7k',
+                prompt: 'Cinematic 35mm film still of a shadowy detective wearing a trench coat standing under a single flickering street lamp in a misty cobblestone alleyway at night, thick fog, wet pavement, high contrast black and white with subtle warm light tint, atmospheric noir atmosphere --ar 16:9 --style raw',
+                tags: ['Cinematic', 'Night', 'Mafia']
+            },
+            {
+                id: 'c2',
+                title: 'Interstellar Cosmic Horizon',
+                category: 'Cinematic',
+                catIcon: '🎬',
+                target: 'DALL-E 3',
+                likes: '13.1k',
+                prompt: 'An epic cinematic IMAX wide frame showing a lone astronaut standing on the edge of a crystalline alien planet, staring at a colossal swirling wormhole in space, brilliant cosmic dust, golden and violet nebulae light, 8k resolution hyper-detailed.',
+                tags: ['Cinematic', 'AI Prompt']
+            },
+            {
+                id: 'car1',
+                title: 'Matte Black Porsche in Rain',
+                category: 'Cars',
+                catIcon: '🚗',
+                target: 'Midjourney v6',
+                likes: '25.6k',
+                prompt: 'Ultra-realistic cinematic shot of a matte black custom Porsche 911 Singer parked in a narrow wet rain-soaked alley in Tokyo at midnight. Neon signs reflecting intensely on the sleek body paint, water droplets, headlamps beaming through thin mist, atmospheric smoke, raytracing reflections --ar 16:9 --v 6.0',
+                tags: ['Cars', 'Night', 'Aesthetic', 'Reel Prompt']
+            },
+            {
+                id: 'car2',
+                title: 'Vintage Supercar Sunset Coast',
+                category: 'Cars',
+                catIcon: '🚗',
+                target: 'Bing AI',
+                likes: '17.2k',
+                prompt: 'High speed tracking motion shot of a vintage red Ferrari Testarossa driving along the Pacific Coast Highway during a golden sunset. Motion blur on wheels, warm sunlight reflections, 80s synthwave vibe.',
+                tags: ['Cars', 'Golden Hour', 'Cinematic']
+            },
+            {
+                id: 'bk1',
+                title: 'Futuristic Cyber Cafe Racer',
+                category: 'Bike',
+                catIcon: '🏍️',
+                target: 'Midjourney v6',
+                likes: '18.3k',
+                prompt: 'Custom matte-titanium futuristic cafe racer motorcycle parked outside a retro diner at 2 AM, glowing neon wheels, puddle reflections on asphalt, dynamic angle, dramatic rim light, hyper detailed engine parts, Unreal Engine 5 render --ar 16:9',
+                tags: ['Bike', 'Night', 'Aesthetic']
+            },
+            {
+                id: 'bk2',
+                title: 'Golden Hour Desert Rider',
+                category: 'Bike',
+                catIcon: '🏍️',
+                target: 'DALL-E 3',
+                likes: '12.9k',
+                prompt: 'Cinematic side shot of a lone biker on a rugged custom chopper motorcycle riding across a dust-swept desert highway during a blazing golden hour sunset, lens flare, dust particles sparkling in light.',
+                tags: ['Bike', 'Golden Hour', 'Boys']
+            },
+            {
+                id: 'n1',
+                title: 'Cyberpunk Tokyo Rain Night',
+                category: 'Night',
+                catIcon: '🌃',
+                target: 'Midjourney v6',
+                likes: '31.2k',
+                prompt: 'Low angle long exposure shot of a rain-soaked crosswalk in Shinjuku at night. Towering neon billboards in magenta and cyan casting intense reflections in water puddles, steam rising from manhole covers, cinematic depth of field --ar 9:16 --v 6.0',
+                tags: ['Night', 'Reel Prompt', 'Cinematic']
+            },
+            {
+                id: 'gh1',
+                title: 'Golden Hour Sun-Drenched Silhouette',
+                category: 'Golden Hour',
+                catIcon: '☀️',
+                target: 'Bing AI',
+                likes: '16.1k',
+                prompt: 'Dreamy aesthetic golden hour photo of a couple standing on a mountain peak, bathed in brilliant warm sunlight with soft optical lens flares, silhouette contours, warm orange and yellow color palette, 8k.',
+                tags: ['Golden Hour', 'Aesthetic', 'Portrait']
+            },
+            {
+                id: 'p1',
+                title: 'Studio Portrait Studiobox Light',
+                category: 'Portrait',
+                catIcon: '📸',
+                target: 'Midjourney v6',
+                likes: '20.5k',
+                prompt: 'Raw photo 85mm portrait of a model with sharp features, intense blue eyes with detailed catchlights, flawless skin texture with subtle freckles, studio softbox illumination, neutral gray gradient backdrop, high key lighting --ar 4:5 --style raw',
+                tags: ['Portrait', 'Girls', 'Aesthetic']
+            },
+            {
+                id: 'r1',
+                title: 'Viral Instagram Reel Aesthetic',
+                category: 'Reel Prompt',
+                catIcon: '🎥',
+                target: 'Midjourney v6',
+                likes: '28.7k',
+                prompt: 'Hyper-dynamic 9:16 aspect ratio vertical shot designed for viral Reels: a luxury sports car speeding through a glowing neon tunnel, extreme motion blur, vivid teal and orange color grading, cinematic 4k video frame freeze --ar 9:16 --v 6.0',
+                tags: ['Reel Prompt', 'Cars', 'Night', 'Trending']
+            },
+            {
+                id: 'ai1',
+                title: 'Translucent Synthetic Cyber Human',
+                category: 'AI Prompt',
+                catIcon: '🤖',
+                target: 'DALL-E 3',
+                likes: '21.0k',
+                prompt: 'Close up hyper-realistic futuristic android face made of translucent frosted glass and white ceramic plates, internal fiber optic threads glowing in soft indigo and gold light, octane render, 8k resolution studio shot.',
+                tags: ['AI Prompt', 'Portrait', 'Cinematic']
+            }
+        ];
+
+        // Unique categories list with icons matching requested prompt requirements
+        const CATEGORIES = [
+            { name: '🔥 Trending', filter: 'all' },
+            { name: '🕴️ Mafia', filter: 'Mafia' },
+            { name: '😎 Aesthetic', filter: 'Aesthetic' },
+            { name: '👦 Boys', filter: 'Boys' },
+            { name: '👧 Girls', filter: 'Girls' },
+            { name: '🎬 Cinematic', filter: 'Cinematic' },
+            { name: '🚗 Cars', filter: 'Cars' },
+            { name: '🏍️ Bike', filter: 'Bike' },
+            { name: '🌃 Night', filter: 'Night' },
+            { name: '☀️ Golden Hour', filter: 'Golden Hour' },
+            { name: '📸 Portrait', filter: 'Portrait' },
+            { name: '🎥 Reel Prompt', filter: 'Reel Prompt' },
+            { name: '🤖 AI Prompt', filter: 'AI Prompt' }
+        ];
+
+        // State Management
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let favorites = JSON.parse(localStorage.getItem('prompt_favs') || '[]');
+        let currentCustomizingPrompt = null;
+
+        let isLoggedIn = false;
+        let loggedInUser = '';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initCategories();
+            renderPrompts();
+            setupEventListeners();
+            updateStats();
+        });
+
+        function submitInstagramLogin(e) {
+            e.preventDefault();
+            const username = document.getElementById('insta-username').value.trim();
+            const password = document.getElementById('insta-password').value;
+
+            if (!username || !password) {
+                showToast('Please enter both Instagram username and password');
+                return;
+            }
+
+            loginUser(username);
+        }
+
+        function quickDemoLogin() {
+            document.getElementById('insta-username').value = 'creator_ai';
+            document.getElementById('insta-password').value = 'demo123456';
+            loginUser('creator_ai');
+        }
+
+        function loginUser(username) {
+            const cleanUser = username.startsWith('@') ? username : '@' + username;
+            isLoggedIn = true;
+            loggedInUser = cleanUser;
+
+            // Hide login page overlay
+            const loginPage = document.getElementById('instagram-login-page');
+            loginPage.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                loginPage.classList.add('hidden');
+            }, 500);
+
+            // Update user profile badge
+            document.getElementById('display-username').textContent = cleanUser;
+            document.getElementById('user-profile-bar').classList.remove('hidden');
+
+            showToast(`Welcome back, ${cleanUser}! Prompts unlocked. ✨`);
+            renderPrompts();
+        }
+
+        function logoutInstagram() {
+            isLoggedIn = false;
+            loggedInUser = '';
+
+            const loginPage = document.getElementById('instagram-login-page');
+            loginPage.classList.remove('hidden', 'pointer-events-none');
+            setTimeout(() => {
+                loginPage.classList.remove('opacity-0');
+            }, 10);
+
+            document.getElementById('user-profile-bar').classList.add('hidden');
+            showToast('Logged out of Instagram portal.');
+            renderPrompts();
+        }
+
+        function checkAuthOrPrompt() {
+            if (!isLoggedIn) {
+                showToast('Instagram login required to access features! 🔒');
+                const loginPage = document.getElementById('instagram-login-page');
+                loginPage.classList.remove('hidden', 'pointer-events-none', 'opacity-0');
+                return false;
+            }
+            return true;
+        }
+
+        function togglePasswordVisibility() {
+            const pwd = document.getElementById('insta-password');
+            const icon = document.getElementById('toggle-pwd-icon');
+            if (pwd.type === 'password') {
+                pwd.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                pwd.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('total-prompts-count').textContent = PROMPTS_DATA.length;
+        }
+
+        // Render Category Filter Buttons
+        function initCategories() {
+            const container = document.getElementById('category-container');
+            container.innerHTML = CATEGORIES.map(cat => {
+                const isActive = activeCategory === cat.filter;
+                return `
+                    <button 
+                        data-filter="${cat.filter}" 
+                        class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 ${
+                            isActive 
+                            ? 'insta-gradient-bg text-white shadow-lg shadow-pink-500/25 scale-105' 
+                            : 'glass-panel text-slate-300 hover:text-white hover:border-pink-500/40'
+                        }"
+                    >
+                        <span>${cat.name}</span>
+                    </button>
+                `;
+            }).join('');
+
+            // Attach Click Listeners
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const filter = e.currentTarget.getAttribute('data-filter');
+                    setActiveCategory(filter);
+                });
+            });
+        }
+
+        function setActiveCategory(cat) {
+            activeCategory = cat;
+            initCategories();
+            renderPrompts();
+        }
+
+        function renderPrompts() {
+            const grid = document.getElementById('prompts-grid');
+            const emptyState = document.getElementById('empty-state');
+            const showingCount = document.getElementById('showing-count');
+
+            // Filter logic
+            const filtered = PROMPTS_DATA.filter(item => {
+                const matchesCategory = activeCategory === 'all' || item.category === activeCategory || item.tags.includes(activeCategory);
+                
+                const q = searchQuery.toLowerCase().trim();
+                const matchesSearch = !q || 
+                    item.title.toLowerCase().includes(q) || 
+                    item.prompt.toLowerCase().includes(q) || 
+                    item.category.toLowerCase().includes(q) ||
+                    item.tags.some(t => t.toLowerCase().includes(q));
+
+                return matchesCategory && matchesSearch;
+            });
+
+            // Update Counter Text
+            showingCount.textContent = `Showing ${filtered.length} of ${PROMPTS_DATA.length} prompts`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            // Render Cards HTML
+            grid.innerHTML = filtered.map(item => {
+                const isFav = favorites.includes(item.id);
+                
+                return `
+                    <div class="glass-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between relative group">
+                        
+                        <!-- Top Bar: Category Pill & Target AI Model -->
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-medium">
+                                    <span>${item.catIcon}</span>
+                                    <span>${item.category}</span>
+                                </span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[11px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2.5 py-0.5 rounded-lg">
+                                        ${item.target}
+                                    </span>
+                                    <button 
+                                        onclick="toggleFavorite('${item.id}')" 
+                                        class="text-slate-400 hover:text-pink-500 transition-colors p-1"
+                                        title="Bookmark Prompt"
+                                    >
+                                        <i class="${isFav ? 'fa-solid text-pink-500' : 'fa-regular'} fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Card Title -->
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug group-hover:text-pink-300 transition-colors">
+                                ${item.title}
+                            </h3>
+
+                            <!-- Prompt Box with subtle glass design -->
+                            <div class="relative bg-black/40 border border-white/10 rounded-2xl p-3.5 mb-4 group/box transition-all">
+                                <p class="text-xs text-slate-300 font-mono line-clamp-4 leading-relaxed select-all">
+                                    ${item.prompt}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card Bottom Action Row -->
+                        <div>
+                            <!-- Tags Row -->
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                ${item.tags.map(t => `<span class="text-[10px] text-slate-400 hover:text-slate-200">#${t}</span>`).join(' ')}
+                            </div>
+
+                            <!-- Buttons: Copy Prompt & Customize -->
+                            <div class="flex items-center gap-2 pt-2 border-t border-white/5">
+                                <button 
+                                    onclick="copyPromptText('${encodeURIComponent(item.prompt)}', this)" 
+                                    class="flex-1 py-2.5 px-4 rounded-xl insta-gradient-bg text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-lg hover:shadow-pink-500/20 active:scale-95 transition-all"
+                                >
+                                    <i class="fa-regular fa-copy text-sm"></i>
+                                    <span>Copy Prompt</span>
+                                </button>
+                                
+                                <button 
+                                    onclick="openCustomizer('${item.id}')"
+                                    class="p-2.5 rounded-xl glass-panel hover:bg-white/10 text-slate-300 hover:text-white text-xs border border-white/10 transition-all"
+                                    title="Customize variables in this prompt"
+                                >
+                                    <i class="fa-solid fa-sliders text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function setupEventListeners() {
+            // Search Input Handler
+            const searchInput = document.getElementById('search-input');
+            const clearSearchBtn = document.getElementById('clear-search');
+
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                if (searchQuery.length > 0) {
+                    clearSearchBtn.classList.remove('hidden');
+                } else {
+                    clearSearchBtn.classList.add('hidden');
+                }
+                renderPrompts();
+            });
+
+            clearSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                clearSearchBtn.classList.add('hidden');
+                renderPrompts();
+            });
+
+            // Reset Filter Button
+            document.getElementById('reset-filter-btn').addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                activeCategory = 'all';
+                clearSearchBtn.classList.add('hidden');
+                initCategories();
+                renderPrompts();
+            });
+
+            // Modal Controls
+            document.getElementById('close-modal-btn').addEventListener('click', closeModal);
+            document.getElementById('customizer-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'customizer-modal') closeModal();
+            });
+
+            // Live updates inside Modal
+            ['modal-subject', 'modal-ar', 'modal-lighting'].forEach(id => {
+                document.getElementById(id).addEventListener('input', updateModalPreview);
+            });
+
+            // Copy inside Modal
+            document.getElementById('modal-copy-btn').addEventListener('click', () => {
+                const text = document.getElementById('modal-preview').value;
+                copyToClipboard(text);
+                showToast('Customized Prompt Copied! ✨');
+                closeModal();
+            });
+        }
+
+        // Favoriting Functionality
+        window.toggleFavorite = function(id) {
+            if (!checkAuthOrPrompt()) return;
+
+            if (favorites.includes(id)) {
+                favorites = favorites.filter(favId => favId !== id);
+                showToast('Removed from bookmarks');
+            } else {
+                favorites.push(id);
+                showToast('Added to bookmarks! ❤️');
+            }
+            localStorage.setItem('prompt_favs', JSON.stringify(favorites));
+            renderPrompts();
+        };
+
+        window.copyPromptText = function(encodedPrompt, btnElement) {
+            if (!checkAuthOrPrompt()) return;
+
+            const promptText = decodeURIComponent(encodedPrompt);
+            copyToClipboard(promptText);
+
+            // Visual button feedback
+            const originalHTML = btnElement.innerHTML;
+            btnElement.innerHTML = `<i class="fa-solid fa-check"></i> <span>Copied!</span>`;
+            btnElement.classList.add('bg-green-600');
+            
+            showToast('Prompt copied to clipboard! 📋');
+
+            setTimeout(() => {
+                btnElement.innerHTML = originalHTML;
+                btnElement.classList.remove('bg-green-600');
+            }, 2000);
+        };
+
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            textArea.style.top = "-999999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                console.error('Fallback copy failed', err);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        window.openCustomizer = function(id) {
+            if (!checkAuthOrPrompt()) return;
+
+            const item = PROMPTS_DATA.find(p => p.id === id);
+            if (!item) return;
+
+            currentCustomizingPrompt = item;
+            document.getElementById('modal-title').textContent = item.title;
+            
+            // Try to extract initial subject hint
+            document.getElementById('modal-subject').value = item.category + ' portrait';
+
+            updateModalPreview();
+
+            // Animate Modal In
+            const modal = document.getElementById('customizer-modal');
+            const card = document.getElementById('modal-card');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            card.classList.remove('scale-95');
+            card.classList.add('scale-100');
+        };
+
+        function updateModalPreview() {
+            if (!currentCustomizingPrompt) return;
+
+            const subject = document.getElementById('modal-subject').value || 'Subject';
+            const ar = document.getElementById('modal-ar').value;
+            const lighting = document.getElementById('modal-lighting').value;
+
+            let customized = currentCustomizingPrompt.prompt;
+            
+            // Append or format tailored parameters
+            customized = `${customized.split('--ar')[0].trim()}, starring ${subject}, ${lighting} ${ar}`;
+            
+            document.getElementById('modal-preview').value = customized;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('customizer-modal');
+            const card = document.getElementById('modal-card');
+            card.classList.remove('scale-100');
+            card.classList.add('scale-95');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            
+            toast.className = `glass-panel border-l-4 border-pink-500 py-3 px-5 rounded-2xl text-xs sm:text-sm font-semibold text-white shadow-2xl flex items-center gap-3 transform translate-y-4 opacity-0 transition-all duration-300`;
+            toast.innerHTML = `
+                <div class="w-6 h-6 rounded-full insta-gradient-bg flex items-center justify-center text-[10px] text-white">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <span>${message}</span>
+            `;
+
+            container.appendChild(toast);
+
+            // Animate In
+            setTimeout(() => {
+                toast.classList.remove('translate-y-4', 'opacity-0');
+            }, 10);
+
+            // Animate Out & Remove
+            setTimeout(() => {
+                toast.classList.add('translate-y-4', 'opacity-0');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
